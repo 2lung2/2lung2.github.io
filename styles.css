@@ -68,9 +68,32 @@ header {
     }
 }
 
+footer {
+    color: var(--blanc);
+    background-color: var(--noir);
+    padding: 3%;
+    font-size: 3em;
+
+    h2 {
+        font-size: 5em;
+    }
+
+    a {
+        color: var(--blanc);
+    }
+
+    p:nth-child(5) {
+        text-align: center;
+        margin-top: 7%;
+        transform: translateY(3vh);
+    }
+}
+
 main {
     margin: 3%;
+}
 
+.mainaccueil {
     div {
         margin: 20vh auto;
         width: 95vw;
@@ -85,23 +108,25 @@ main {
 
 }
 
-footer {
-    color: var(--blanc);
-    background-color: var(--noir);
-    padding: 3%;
-    font-size: 3em;
+.mainapropos {
+    display: flex;
+    margin-bottom: 30vh;
 
-    h2 {
-        font-size: 5em;
+    img {
+        float: left;
     }
 
-    a {
-        color: var(--blanc);
+    p {
+        font-size: 1.5em;
     }
 }
 
-.trademark {
-    text-align: center;
-    margin-top: 7%;
-    transform: translateY(3vh);
+.mainprojets {
+    margin-bottom: 30vh;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
