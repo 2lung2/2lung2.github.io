@@ -102,7 +102,7 @@ main {
     }
 
     ul {
-        margin: 40vh 0;
+        margin: 50vh 0;
     }
 
 }
@@ -144,10 +144,20 @@ footer {
 
     h2 {
         font-size: 5em;
+        margin: 0;
     }
 
     a {
         color: var(--blanc);
+    }
+
+    a:not(:hover) {
+        transition: 0.3s;
+    }
+
+    a:hover {
+        font-size: larger;
+        transition: 0.3s;
     }
 
     p:nth-child(5) {

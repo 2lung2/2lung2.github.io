@@ -15,8 +15,7 @@ gsap.to(
             trigger: ".logoprincipal",
             start: "30% 30%",
             end: "30% 20%",
-            scrub: 1,
-            markers: true
+            scrub: 1
         }
     }
 );
@@ -41,8 +40,8 @@ gsap.fromTo(
         ease: "power2.inOut",
         scrollTrigger: {
             trigger: ".liste",
-            start: "top 40%",
-            end: "top 30%",
+            start: "-20% 40%",
+            end: "-20% 30%",
             scrub: 1
         }
     }
