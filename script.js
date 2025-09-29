@@ -3,8 +3,23 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".logoprincipal img", {
     opacity: 1,
     ease: "power1.inOut",
-    duration: 2,
+    duration: 1,
 })
+
+gsap.to(
+    ".logoprincipal",
+    {
+        alpha: 0,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".logoprincipal",
+            start: "30% 30%",
+            end: "30% 20%",
+            scrub: 1,
+            markers: true
+        }
+    }
+);
 
 gsap.to(".monnom", {
     translateX: "1%",
@@ -23,13 +38,12 @@ gsap.fromTo(
     {
         alpha: 1,
         y: -30,
-        ease: "power1.inOut",
+        ease: "power2.inOut",
         scrollTrigger: {
             trigger: ".liste",
             start: "top 40%",
             end: "top 30%",
-            scrub: 1,
-            markers: true
+            scrub: 1
         }
     }
 );

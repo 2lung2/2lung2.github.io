@@ -66,16 +66,20 @@ nav {
 }
 
 header {
-    margin: 20vh 2%;
+    margin: 0 2%;
 }
 
 .logoprincipal {
     width: 1000px;
     height: 660px;
     margin: 0 auto;
-    transform: translateX(-5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
+        width: 60%;
+        height: 60%;
         opacity: 0;
     }
 }
