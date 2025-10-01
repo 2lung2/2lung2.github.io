@@ -30,11 +30,21 @@
     </header>
 
    <main alt="modals display-none display-block" class="mainprojets">
-        <div alt="projet"></div>
-        <div alt="projet"></div>
-        <div alt="projet"></div>
-        <div alt="projet"></div>
+        <div alt="projet" @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware')"></div>
+        <div alt="projet" @click="changeModal('')"></div>
+        <div alt="projet" @click="changeModal('')"></div>
+        <div alt="projet" @click="changeModal('')"></div>
     </main>
+
+    <dialog open class="modal" id="modal">
+        <h2>{{ title }}</h2>
+        <img :src= "image">
+        <p>{{ description }}</p>
+        <h3>Roles</h3>
+        <p>{{ role }}</p>
+        <h3>Logiciels</h3>
+        <p>{{ software }}</p>
+    </dialog>
 
     <footer>
         <h2>Contact</h2>

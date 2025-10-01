@@ -212,6 +212,15 @@ section {
     }
 }
 
+.modal {
+    background-color: aqua;
+    width: 50%;
+
+    img {
+        width: 50%;
+    }
+}
+
 
 footer {
     color: var(--blanc);
