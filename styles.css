@@ -21,6 +21,7 @@ a {
 
 h1 {
     font-size: 17vw;
+    line-height: 1.2;
 }
 
 li {
@@ -31,7 +32,7 @@ li {
     :not(:hover) {
         transition: 0.3s;
     }
-    
+
     :hover {
         font-size: 17vw;
         transition: 0.3s;
@@ -66,7 +67,7 @@ nav {
 }
 
 header {
-    margin: 0 2%;
+    margin: 4.5% 2%;
 }
 
 .logoprincipal {
@@ -85,6 +86,7 @@ header {
 }
 
 .monnom {
+    margin-top: 30vh;
     transform: translateX(-100%);
 }
 
@@ -121,14 +123,53 @@ main {
 }
 
 .mainprojets {
+    margin: 0;
     margin-bottom: 30vh;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 17vw;
+        height: 100%;
+        border-color: var(--noir);
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 5px;
+        cursor: pointer;
     }
 
+    div:not(:hover) {
+        transition: 0.3s;
+    }
+
+    div:hover {
+        width: 23vw;
+        transition: 0.3s;
+    }
+
+    div:nth-child(1) {
+        background-image: url("./media/images/logo_lty.png");
+    }
+
+    div:nth-child(2) {
+        background-image: url("./media/images/logo_lty.png");
+    }
+    
+    div:nth-child(3) {
+        background-image: url("./media/images/logo_lty.png");
+    }
+
+    div:nth-child(4) {
+        background-image: url("./media/images/logo_lty.png");
+    }
+    
 }
 
 section h1 {
@@ -141,9 +182,10 @@ footer {
     background-color: var(--noir);
     padding: 3%;
     font-size: 3em;
+    font-size: 3vw;
 
     h2 {
-        font-size: 5em;
+        font-size: 7vw;
         margin: 0;
     }
 
@@ -161,6 +203,7 @@ footer {
     }
 
     p:nth-child(5) {
+        font-size: 2vw;
         text-align: center;
         margin-top: 7%;
         transform: translateY(3vh);
