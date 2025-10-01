@@ -24,6 +24,11 @@ h1 {
     line-height: 1.2;
 }
 
+h2 {
+    font-size: 3vw;
+    margin: 2%; 
+}
+
 li {
     list-style-type: none;
     text-align: right;
@@ -110,7 +115,7 @@ main {
     }
 
     ul {
-        margin: 50vh 0;
+        margin: 30vh 0;
     }
 
 }
@@ -185,6 +190,10 @@ section {
         margin: 2%;
     }
 
+    h2 {
+        margin-top: 20vh;
+    }
+
     div {
         margin: 5%;
         display: flex;
@@ -195,7 +204,6 @@ section {
 
     img {
         width: 100%;
-        
     }
 
     a {
