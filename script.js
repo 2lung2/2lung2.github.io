@@ -1,4 +1,6 @@
+// Chargement plugin
 gsap.registerPlugin(ScrollTrigger);
+
 
 // Vue
 const app = Vue.createApp({
@@ -25,10 +27,10 @@ const app = Vue.createApp({
         gluttonyDescription: "alsdaslkd",
         gluttonySoftware: "software",
 
-        speculumRole: "role",
-        speculumImage: "./media/images/linkedin_logo.png",
-        speculumDescription: "alsdaslkd",
-        speculumSoftware: "software",
+        plumeRole: "role",
+        plumeImage: "./media/images/linkedin_logo.png",
+        plumeDescription: "alsdaslkd",
+        plumeSoftware: "software",
     };
   },
   methods: {
@@ -43,6 +45,7 @@ const app = Vue.createApp({
 });
 
 app.mount("body")
+
 
 // GSAP
 gsap.to(".logoprincipal img", {
