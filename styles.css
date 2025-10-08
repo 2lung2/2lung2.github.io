@@ -20,7 +20,7 @@ a {
 }
 
 h1 {
-    font-size: 15vw;
+    font-size: 25vh;
     line-height: 1.2;
 }
 
@@ -91,7 +91,7 @@ header {
 }
 
 .monnom {
-    margin-top: 30vh;
+    margin-top: 10vh;
     transform: translateX(-100%);
 }
 
@@ -130,6 +130,7 @@ main {
 
     p {
         font-size: 1.5em;
+        padding-right: 25%;
     }
 }
 
@@ -186,7 +187,7 @@ main {
 section {
     margin-bottom: 30vh;
     h1 {
-        font-size: 15vw;
+        font-size: 30vh;
         margin: 2%;
     }
 
@@ -200,10 +201,20 @@ section {
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 10px;
+        
     }
 
     img {
         width: 100%;
+        filter: grayscale(100%);
+    }
+
+    img:not(:hover) {
+        transition: 0.3s;
+    }
+
+    img:hover {
+        filter: grayscale(0%);
     }
 
     a {
@@ -212,12 +223,19 @@ section {
     }
 }
 
+.cplusplus {
+    width: 85%;
+}
+
 .modal {
+    position: fixed;
     background-color: aqua;
     width: 50%;
+    top: 25%;
+    height: 50%;
 
     img {
-        width: 50%;
+        height: 10%;
     }
 }
 
@@ -226,12 +244,12 @@ footer {
     color: var(--blanc);
     background-color: var(--noir);
     padding: 3%;
-    font-size: 3em;
-    font-size: 3vw;
+    font-size: 3vh;
 
     h2 {
-        font-size: 7vw;
+        font-size: 10vh;
         margin: 0;
+        margin-bottom: 10vh;
     }
 
     a {
@@ -248,7 +266,7 @@ footer {
     }
 
     p:nth-child(5) {
-        font-size: 2vw;
+        font-size: 2vh;
         text-align: center;
         margin-top: 7%;
         transform: translateY(3vh);

@@ -31,6 +31,8 @@ const app = Vue.createApp({
         plumeImage: "./media/images/linkedin_logo.png",
         plumeDescription: "alsdaslkd",
         plumeSoftware: "software",
+
+        root: document.querySelector('root')
     };
   },
   methods: {
@@ -45,6 +47,9 @@ const app = Vue.createApp({
 });
 
 app.mount("body")
+
+// Nightmode
+const nightButton = document.querySelector(".nightmode");
 
 
 // GSAP
@@ -63,8 +68,7 @@ gsap.to(
             trigger: ".logoprincipal",
             start: "60% 30%",
             end: "60% 20%",
-            scrub: 1,
-            markers: true
+            scrub: 1
         }
     }
 );
@@ -74,9 +78,10 @@ gsap.to(".monnom", {
     ease: "none",
     scrollTrigger: {
         trigger: ".logoprincipal",
-        start: "top 30%",
-        end: "bottom top",
-        scrub: 1
+        start: "20% 30%",
+        end: "70% top",
+        scrub: 1,
+        markers: true
     }
 });
 
@@ -89,8 +94,8 @@ gsap.fromTo(
         ease: "power2.inOut",
         scrollTrigger: {
             trigger: ".liste",
-            start: "-20% 40%",
-            end: "-20% 30%",
+            start: "-30% 60%",
+            end: "-30% 25%",
             scrub: 1
         }
     }
