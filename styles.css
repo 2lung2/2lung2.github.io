@@ -88,20 +88,29 @@ nav {
 }
 
 .logoprincipal {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+}
 
-    img {
-        width: auto;
-        max-width: 1200px;
-        height: auto;
-        max-height: 1200px;
-        opacity: 0;
+header {
+    .logoprincipal {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: auto;
+            max-width: 1200px;
+            height: auto;
+            max-height: 1200px;
+            opacity: 0;
+        }
     }
 }
+
+
 
 .monnom {
     margin-top: 10vh;
@@ -163,12 +172,12 @@ main {
         border-width: 5px;
         border-style: solid;
         border-radius: 20px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         margin-right: 5px;
+        filter: grayscale(1);
         cursor: pointer;
-        overflow: hidden;
     }
 
     div:not(:hover) {
@@ -178,24 +187,35 @@ main {
     div:hover {
         width: 23vw;
         transition: 0.3s;
+        filter: grayscale(0);
     }
 
     div:nth-child(1) {
-        background-image: url("./media/images/logo_lty.png");
+        background-image: url("./media/images/projets/speculum_cover.png");
     }
 
     div:nth-child(2) {
-        background-image: url("./media/images/logo_lty.png");
+        background-image: url("./media/images/projets/lapilule_cover.png");
     }
 
     div:nth-child(3) {
-        background-image: url("./media/images/logo_lty.png");
+        background-image: url("./media/images/projets/plumevorace_cover.png");
     }
 
     div:nth-child(4) {
-        background-image: url("./media/images/logo_lty.png");
+        background-image: url("./media/images/projets/gluttony_cover.png");
     }
 
+}
+
+#screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--noir);
+    opacity: 0.5;
+    z-index: 2;
 }
 
 section {
@@ -248,6 +268,7 @@ section {
     width: 50%;
     top: 25%;
     height: 50%;
+    z-index: 3;
 
     img {
         height: 10%;
@@ -259,12 +280,18 @@ section {
     cursor: pointer;
     font-size: 30px;
 
-    :hover {
-        font-size: 50px;
-        transition: 0.2s;
-    }
+
 }
 
+#closebutton:not(:hover) {
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+#closebutton:hover {
+    font-size: 35px;
+    transition: 0.2s;
+}
 
 footer {
     color: var(--blanc);
@@ -292,7 +319,7 @@ footer {
         transition: 0.3s;
     }
 
-    p:nth-child(3) {
+    .trademark {
         font-size: 1vw;
         text-align: center;
         margin-top: 7%;

@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
@@ -20,17 +21,25 @@
 </head>
 
 <body>
+    <!-- pour que le nightmode fonctionne -->
+    <div class="logoprincipal"><img src="./media/images/logo_lty.png"></div>
+    
+    <div id="screen" v-show="modalIsShown == true"></div>
     <nav>
         <a href="./index.html">Ting Yung Terry Lu</a>
-        <div alt="nightmode logo" class="nightmode"></div>
+        <div alt="nightmode logo" class="nightmode">
+            <img src="./media/images/nightmode_blanc.png" alt="">
+        </div>
     </nav>
 
     <header>
         <h1>Mes <br> projets</h1>
     </header>
 
-   <main alt="modals display-none display-block" class="mainprojets">
-        <div alt="projet" @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true"></div>
+    <main class="mainprojets">
+        <div alt="projet"
+            @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true">
+        </div>
         <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
         <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
         <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
@@ -39,7 +48,7 @@
     <dialog open class="modal" id="modal" v-show="modalIsShown == true">
         <div id="closebutton" @click="modalIsShown = false"> X </div>
         <h2>{{ title }}</h2>
-        <img :src= "image">
+        <img :src="image">
         <p>{{ description }}</p>
         <h3>Roles</h3>
         <p>{{ role }}</p>
