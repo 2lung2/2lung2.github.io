@@ -30,13 +30,14 @@
     </header>
 
    <main alt="modals display-none display-block" class="mainprojets">
-        <div alt="projet" @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware')"></div>
-        <div alt="projet" @click="changeModal('')"></div>
-        <div alt="projet" @click="changeModal('')"></div>
-        <div alt="projet" @click="changeModal('')"></div>
+        <div alt="projet" @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true"></div>
+        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
+        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
+        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
     </main>
 
-    <dialog open class="modal" id="modal">
+    <dialog open class="modal" id="modal" v-show="modalIsShown == true">
+        <div id="closebutton" @click="modalIsShown = false"> X </div>
         <h2>{{ title }}</h2>
         <img :src= "image">
         <p>{{ description }}</p>
@@ -50,7 +51,7 @@
         <h2>Contact</h2>
         <p><a href="mailto:terrylty18@gmail.com">terrylty18@gmail.com</a></p>
         <p>Laval, Qc</p>
-        <img src="./media/images/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin">
+        <a href=""><img src="./media/images/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin"></a>
         <p class="trademark">Lu Ting Yung - 2025</p>
     </footer>
 </body>

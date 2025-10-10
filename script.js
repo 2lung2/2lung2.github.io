@@ -6,6 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 const app = Vue.createApp({
     data() {
         return {
+            modalIsShown: false,
+
             title: "title",
             image: "image",
             description: "description",
@@ -31,8 +33,6 @@ const app = Vue.createApp({
             plumeImage: "./media/images/linkedin_logo.png",
             plumeDescription: "alsdaslkd",
             plumeSoftware: "software",
-
-            root: document.querySelector('root')
         };
     },
     methods: {
@@ -42,10 +42,6 @@ const app = Vue.createApp({
             this.description = this[newdescription];
             this.role = this[newrole];
             this.software = this[newsoftware];
-        },
-        changeMode() {
-            console.log("alskdjs");
-            this.root.style.setProperty('--blanc', '#ff5733');
         },
     }
 });

@@ -11,12 +11,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-    
+
     <script src="./script.js" defer></script>
 </head>
 
@@ -30,12 +31,18 @@
 
     <header>
         <div alt="Logo LTY" class="logoprincipal"><img src="./media/images/logo_lty.png"></div>
-        <div class="monnom"><h1>Ting Yung <br> Terry <br> Lu</h1></div>
+        <div class="monnom">
+            <h1>Ting Yung <br> Terry <br> Lu</h1>
+        </div>
     </header>
 
     <main class="mainaccueil">
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YutRnIUIo-I?si=Y40vREWxrnj3SVLm&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&playlist=YutRnIUIo-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/YutRnIUIo-I?si=Y40vREWxrnj3SVLm&autoplay=1&mute=1&loop=1&controls=0&color=white&modestbranding=0&rel=0&playsinline=1&playlist=YutRnIUIo-I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <ul class="liste">
@@ -48,9 +55,13 @@
 
     <footer>
         <h2>Contact</h2>
-        <p><a href="mailto:terrylty18@gmail.com">terrylty18@gmail.com</a></p>
-        <p>Laval, Qc</p>
-        <img src="./media/images/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin">
+        <div class="contactcontainer">
+            <div>
+                <p><a href="mailto:terrylty18@gmail.com">terrylty18@gmail.com</a></p>
+                <p>Laval, Qc</p>
+            </div>
+            <a href=""><img src="./media/images/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin"></a>
+        </div>
         <p>Lu Ting Yung - 2025</p>
     </footer>
 </body>
