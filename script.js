@@ -13,35 +13,41 @@ const app = Vue.createApp({
             description: "description",
             role: "role",
             software: "software",
+            link: "link",
 
             speculumRole: "Modélisation, animation, design sonore, montage",
             speculumImage: "./media/images/projets/speculum_screen1.png",
             speculumDescription: "Court-métrage animé d'un univers étrange. Le monde réalisé est abstrait et étrange. J'ai modélisé et monté le tout pour créer une ambiance énigmatique.",
             speculumSoftware: "Maya, Davinci Resolve, Reaper",
+            speculumLink: "https://www.youtube.com/watch?v=YutRnIUIo-I",
 
             lapiluleRole: "Montage vidéo, direction artistique, création de quelques animations 2D, scénariste assistant, caméraman. Réalisé en collaboration avec Nicolas Cruz, Thearylou Lach, Xavier Martineau",
             lapiluleImage: "./media/images/projets/lapilule_screen1.jpg",
             lapiluleDescription: "Court-métrage sur le délire. Avec la pilule on voulait montrer le délire d'un écrivain dans une histoire courte avec des visuels percutant.",
             lapiluleSoftware: "Davinci Resolve, After effects, Dragonframe 4",
+            lapiluleLink: "https://www.youtube.com/watch?v=eTVMWB6OQQQ",
 
             gluttonyRole: "Programmation du jeu, level design",
             gluttonyImage: "./media/images/projets/gluttony_screen1.png",
             gluttonyDescription: "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge. ",
             gluttonySoftware: "Visual Studio (Javascript, Phaser3), Itch.io",
+            gluttonyLink: "https://lung2.itch.io/gluttony",
 
             plumeRole: "Modélisation, rigging, faire des rendus",
             plumeImage: "./media/images/projets/plume_screen1.jpg",
             plumeDescription: "Rendus d'un personnage que j'ai créé. J'ai modélisé un personnage moitié homme et moitié corbeau pour rentrer dans un monde noir et blanc. Ce personnage est un produit de son environnement sombre.",
             plumeSoftware: "Maya",
+            plumeLink: " ",
         };
     },
     methods: {
-        changeModal(newtitle, newimage, newdescription, newrole, newsoftware) {
+        changeModal(newtitle, newimage, newdescription, newrole, newsoftware, newlink) {
             this.title = newtitle;
             this.image = this[newimage]
             this.description = this[newdescription];
             this.role = this[newrole];
             this.software = this[newsoftware];
+            this.link = this[newlink]
         },
     }
 });

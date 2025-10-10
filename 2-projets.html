@@ -38,11 +38,13 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title" id="exampleModalLabel">{{ title }}</h2>
+                        <a :href="this.link" target="_blank">
+                            <h2 class="modal-title" id="exampleModalLabel">{{ title }}</h2>
+                        </a>
                         <div id="closebutton" @click="modalIsShown = false"> X </div>
                     </div>
                     <div class="modal-body">
-                        <img :src="image">
+                        <a :href="this.image" target="_blank"><img :src="image"></a>
                         <p>{{ description }}</p>
                         <h3>Roles</h3>
                         <p>{{ role }}</p>
@@ -60,31 +62,18 @@
 
     <main class="mainprojets">
         <div
-            @click="changeModal('Speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true">
+            @click="changeModal('Speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware', 'speculumLink'), modalIsShown = true">
         </div>
         <div
-            @click="changeModal('La pilule', 'lapiluleImage', 'lapiluleDescription', 'lapiluleRole', 'lapiluleSoftware'), modalIsShown = true">
+            @click="changeModal('La pilule', 'lapiluleImage', 'lapiluleDescription', 'lapiluleRole', 'lapiluleSoftware', 'lapiluleLink'), modalIsShown = true">
         </div>
         <div
-            @click="changeModal('La plume vorace', 'plumeImage', 'plumeDescription', 'plumeRole', 'plumeSoftware'), modalIsShown = true">
+            @click="changeModal('La plume vorace', 'plumeImage', 'plumeDescription', 'plumeRole', 'plumeSoftware', 'plumeLink'), modalIsShown = true">
         </div>
         <div
-            @click="changeModal('Gluttony', 'gluttonyImage', 'gluttonyDescription', 'gluttonyRole', 'gluttonySoftware'), modalIsShown = true">
+            @click="changeModal('Gluttony', 'gluttonyImage', 'gluttonyDescription', 'gluttonyRole', 'gluttonySoftware', 'gluttonyLink'), modalIsShown = true">
         </div>
     </main>
-
-    <!-- Vieux modal
-    <dialog open class="modal" id="modal" v-show="modalIsShown == true">
-        <div id="closebutton" @click="modalIsShown = false"> X </div>
-        <h2>{{ title }}</h2>
-        <img :src="image">
-        <p>{{ description }}</p>
-        <h3>Roles</h3>
-        <p>{{ role }}</p>
-        <h3>Logiciels</h3>
-        <p>{{ software }}</p>
-    </dialog> 
-    -->
 
     <footer>
         <h2>Contact</h2>
