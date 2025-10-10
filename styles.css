@@ -20,40 +20,40 @@ a {
 }
 
 h1 {
-    font-size: 25vh;
+    font-size: 20vh;
     line-height: 1.2;
 }
 
 h2 {
     font-size: 3vw;
-    margin: 2%; 
+    margin: 2%;
 }
 
 li {
     list-style-type: none;
     text-align: right;
-    font-size: 25vh;
+    font-size: 18vh;
 
     :not(:hover) {
         transition: 0.3s;
     }
 
     :hover {
-        font-size: 28vh;
+        font-size: 20vh;
         transition: 0.3s;
     }
 }
 
 nav {
-    width: 100vw;
+    width: 99vw;
     height: 3vh;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2em;
-    padding: 1% 2%;
+    font-size: 2vh;
+    padding: 10px 30px;
     background-color: var(--noir);
     z-index: 1;
 
@@ -62,30 +62,43 @@ nav {
     }
 
     div {
-        width: 2.2vw;
-        height: 2.2vw;
+        width: 40px;
+        height: 40px;
         transform: translateX(-200%);
-        background-image: url("./media/images/nightmode_blanc.png");
         background-size: contain;
         background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        :not(:hover) {
+            transition: 0.2s;
+        }
+
+        :hover {
+            width: 30px;
+            transition: 0.2s;
+        }
+
+        img {
+            width: 60%;
+        }
     }
 }
 
-header {
-    margin: 4.5% 2%;
-}
-
 .logoprincipal {
-    width: 1000px;
-    height: 660px;
-    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        width: 60%;
-        height: 60%;
+        width: auto;
+        max-width: 1200px;
+        height: auto;
+        max-height: 1200px;
         opacity: 0;
     }
 }
@@ -173,7 +186,7 @@ main {
     div:nth-child(2) {
         background-image: url("./media/images/logo_lty.png");
     }
-    
+
     div:nth-child(3) {
         background-image: url("./media/images/logo_lty.png");
     }
@@ -181,11 +194,12 @@ main {
     div:nth-child(4) {
         background-image: url("./media/images/logo_lty.png");
     }
-    
+
 }
 
 section {
     margin-bottom: 30vh;
+
     h1 {
         font-size: 30vh;
         margin: 2%;
@@ -201,7 +215,7 @@ section {
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 10px;
-        
+
     }
 
     img {
@@ -244,7 +258,8 @@ footer {
     color: var(--blanc);
     background-color: var(--noir);
     padding: 3%;
-    font-size: 3vh;
+    font-size: 2vw;
+    width: 100vw;
 
     h2 {
         font-size: 10vh;
@@ -266,9 +281,69 @@ footer {
     }
 
     p:nth-child(5) {
-        font-size: 2vh;
+        font-size: 1vw;
         text-align: center;
         margin-top: 7%;
         transform: translateY(3vh);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .logoprincipal {
+        height: 70vh;
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    h1 {
+        font-size: 15vw;
+    }
+
+    li {
+        list-style-type: none;
+        text-align: right;
+        font-size: 15vw;
+
+        :not(:hover) {
+            transition: 0.3s;
+        }
+
+        :hover {
+            font-size: 17vw;
+            transition: 0.3s;
+        }
+    }
+}
+
+@media screen and ((min-width: 800px) and (max-width: 1200px)) {
+    .logoprincipal {
+
+        img {
+            width: 700px;
+            height: 700px;
+        }
+    }
+
+    h1 {
+        font-size: 15vw;
+    }
+
+    li {
+        list-style-type: none;
+        text-align: right;
+        font-size: 15vw;
+
+        :not(:hover) {
+            transition: 0.3s;
+        }
+
+        :hover {
+            font-size: 17vw;
+            transition: 0.3s;
+        }
     }
 }
