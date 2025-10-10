@@ -14,25 +14,25 @@ const app = Vue.createApp({
             role: "role",
             software: "software",
 
-            speculumRole: "role",
-            speculumImage: "./media/images/linkedin_logo.png",
-            speculumDescription: "alsdaslkd",
-            speculumSoftware: "software",
+            speculumRole: "Modélisation, animation, design sonore, montage",
+            speculumImage: "./media/images/projets/speculum_screen1.png",
+            speculumDescription: "Court-métrage animé d'un univers étrange. Le monde réalisé est abstrait et étrange. J'ai modélisé et monté le tout pour créer une ambiance énigmatique.",
+            speculumSoftware: "Maya, Davinci Resolve, Reaper",
 
-            lapiluleRole: "role",
-            lapiluleImage: "./media/images/linkedin_logo.png",
-            lapiluleDescription: "alsdaslkd",
-            lapiluleSoftware: "software",
+            lapiluleRole: "Montage vidéo, direction artistique, création de quelques animations 2D, scénariste assistant, caméraman. Réalisé en collaboration avec Nicolas Cruz, Thearylou Lach, Xavier Martineau",
+            lapiluleImage: "./media/images/projets/lapilule_screen1.jpg",
+            lapiluleDescription: "Court-métrage sur le délire. Avec la pilule on voulait montrer le délire d'un écrivain dans une histoire courte avec des visuels percutant.",
+            lapiluleSoftware: "Davinci Resolve, After effects, Dragonframe 4",
 
-            gluttonyRole: "role",
-            gluttonyImage: "./media/images/linkedin_logo.png",
-            gluttonyDescription: "alsdaslkd",
-            gluttonySoftware: "software",
+            gluttonyRole: "Programmation du jeu, level design",
+            gluttonyImage: "./media/images/projets/gluttony_screen1.png",
+            gluttonyDescription: "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge. ",
+            gluttonySoftware: "Visual Studio (Javascript, Phaser3), Itch.io",
 
-            plumeRole: "role",
-            plumeImage: "./media/images/linkedin_logo.png",
-            plumeDescription: "alsdaslkd",
-            plumeSoftware: "software",
+            plumeRole: "Modélisation, rigging, faire des rendus",
+            plumeImage: "./media/images/projets/plume_screen1.jpg",
+            plumeDescription: "Rendus d'un personnage que j'ai créé. J'ai modélisé un personnage moitié homme et moitié corbeau pour rentrer dans un monde noir et blanc. Ce personnage est un produit de son environnement sombre.",
+            plumeSoftware: "Maya",
         };
     },
     methods: {
@@ -47,6 +47,7 @@ const app = Vue.createApp({
 });
 
 app.mount("body")
+
 
 
 // GSAP
@@ -97,6 +98,7 @@ gsap.fromTo(
         }
     }
 );
+
 
 
 // Javascript

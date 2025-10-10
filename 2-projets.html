@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets</title>
-    <link rel="icon" type="image/x-icon" href="./media/images/favicon1.png">
+    <link rel="icon" type="image/x-icon" href="./media/images/icone/favicon.png">
 
     <link rel="stylesheet" href="./styles.css">
 
@@ -23,7 +23,7 @@
 <body>
     <!-- pour que le nightmode fonctionne -->
     <div class="logoprincipal"><img src="./media/images/logo_lty.png"></div>
-    
+
     <div id="screen" v-show="modalIsShown == true"></div>
     <nav>
         <a href="./index.html">Ting Yung Terry Lu</a>
@@ -32,19 +32,48 @@
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modalcontainer" v-show="modalIsShown == true">
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">{{ title }}</h2>
+                        <div id="closebutton" @click="modalIsShown = false"> X </div>
+                    </div>
+                    <div class="modal-body">
+                        <img :src="image">
+                        <p>{{ description }}</p>
+                        <h3>Roles</h3>
+                        <p>{{ role }}</p>
+                        <h3>Logiciels</h3>
+                        <p>{{ software }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <h1>Mes <br> projets</h1>
     </header>
 
     <main class="mainprojets">
-        <div alt="projet"
-            @click="changeModal('speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true">
+        <div
+            @click="changeModal('Speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware'), modalIsShown = true">
         </div>
-        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
-        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
-        <div alt="projet" @click="changeModal(''), modalIsShown = true"></div>
+        <div
+            @click="changeModal('La pilule', 'lapiluleImage', 'lapiluleDescription', 'lapiluleRole', 'lapiluleSoftware'), modalIsShown = true">
+        </div>
+        <div
+            @click="changeModal('La plume vorace', 'plumeImage', 'plumeDescription', 'plumeRole', 'plumeSoftware'), modalIsShown = true">
+        </div>
+        <div
+            @click="changeModal('Gluttony', 'gluttonyImage', 'gluttonyDescription', 'gluttonyRole', 'gluttonySoftware'), modalIsShown = true">
+        </div>
     </main>
 
+    <!-- Vieux modal
     <dialog open class="modal" id="modal" v-show="modalIsShown == true">
         <div id="closebutton" @click="modalIsShown = false"> X </div>
         <h2>{{ title }}</h2>
@@ -54,7 +83,8 @@
         <p>{{ role }}</p>
         <h3>Logiciels</h3>
         <p>{{ software }}</p>
-    </dialog>
+    </dialog> 
+    -->
 
     <footer>
         <h2>Contact</h2>
