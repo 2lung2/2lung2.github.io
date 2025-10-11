@@ -34,10 +34,10 @@ const app = Vue.createApp({
             gluttonyLink: "https://lung2.itch.io/gluttony",
 
             plumeRole: "Modélisation, rigging, faire des rendus",
-            plumeImage: "./media/images/projets/plume_screen1.jpg",
+            plumeImage: "./media/images/projets/plume_screen2.jpg",
             plumeDescription: "Rendus d'un personnage que j'ai créé. J'ai modélisé un personnage moitié homme et moitié corbeau pour rentrer dans un monde noir et blanc. Ce personnage est un produit de son environnement sombre.",
             plumeSoftware: "Maya",
-            plumeLink: " ",
+            plumeLink: "./media/images/projets/plume_screen1.jpg",
         };
     },
     methods: {
@@ -57,25 +57,13 @@ app.mount("body")
 
 
 // GSAP
+
+// Accueil
 gsap.to(".logoprincipal img", {
     opacity: 1,
     ease: "power1.inOut",
     duration: 1,
 })
-
-gsap.to(
-    ".logoprincipal",
-    {
-        alpha: 0,
-        ease: "power1.inOut",
-        scrollTrigger: {
-            trigger: ".logoprincipal",
-            start: "30% 30%",
-            end: "30% 10%",
-            scrub: 1
-        }
-    }
-);
 
 gsap.to(".monnom", {
     translateX: "1%",
@@ -104,6 +92,81 @@ gsap.fromTo(
     }
 );
 
+// A Propos
+gsap.to(
+    "#titrepropos",
+    {
+        alpha: 0,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: "#titrepropos",
+            start: "50% 30%",
+            end: "50% 10%",
+            scrub: 1
+        }
+    }
+);
+
+gsap.to(
+    ".mainapropos",
+    {
+        scale: 1.3,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".mainapropos",
+            start: "top 80%",
+            end: "top 50%",
+            scrub: 1
+        }
+    }
+);
+
+gsap.fromTo(
+    "section",
+    { alpha: 0, y: 30 },
+    {
+        alpha: 1,
+        y: -30,
+        ease: "power2.inOut",
+        scrollTrigger: {
+            trigger: "section",
+            start: "top 40%",
+            end: "top 25%",
+            scrub: 1
+        }
+    }
+);
+
+// Projets
+gsap.to(
+    "#titreprojets",
+    {
+        alpha: 0,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: "#titreprojets",
+            start: "50% 30%",
+            end: "50% 10%",
+            scrub: 1,
+            markers: true
+        }
+    }
+);
+
+gsap.to(
+    ".mainprojets",
+    {
+        scale: 1.1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".mainprojets",
+            start: "top 80%",
+            end: "top 50%",
+            scrub: 1
+        }
+    }
+);
+
 
 
 // Javascript
@@ -123,7 +186,9 @@ nightMode()
 
 // Clique du bouton nightmode
 nightButton.addEventListener('click', function () {
+    // Alterne variable nightmode
     isNightMode = !isNightMode;
+    // appel fonction nightmode
     nightMode()
 })
 
