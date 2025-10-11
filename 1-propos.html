@@ -18,22 +18,18 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./script.js" defer></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous" defer></script>
 </head>
 
 <body>
     <!-- pour que le nightmode fonctionne -->
-    <div class="logoprincipal"><img src="./media/images/logo_lty.png"></div>
+    <div class="logoprincipal">
+        <img src="./media/images/logo_lty.png" alt="Logo principal">
+    </div>
 
     <nav>
         <a href="./index.html">Ting Yung Terry Lu</a>
         <div alt="nightmode logo" class="nightmode">
-            <img src="./media/images/nightmode_blanc.png" alt="">
+            <img src="./media/images/nightmode_blanc.png" alt="Logo Nightmode">
         </div>
     </nav>
 
@@ -43,11 +39,8 @@
 
     <main class="mainapropos">
         <img src="./media/images/logo_lty.png" alt="portrait" width="50%">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+        <p>Je suis étudiant en multimédia en quête d' un poste de web, en 3D ou en jeux vidéo.
+        </p>
     </main>
 
     <section>
@@ -55,53 +48,62 @@
         <h2>Logiciels</h2>
         <div>
             <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">
-                <img src="./media/images/logiciels/davinci.png">
+                <img src="./media/images/logiciels/davinci.png" alt="Logo DaVinci">
             </a>
             <a href="https://www.figma.com/" target="_blank">
-                <img src="./media/images/logiciels/figma.png">
+                <img src="./media/images/logiciels/figma.png" alt="Logo Figma">
             </a>
             <a href="https://www.autodesk.com/" target="_blank">
-                <img src="./media/images/logiciels/maya.png">
+                <img src="./media/images/logiciels/maya.png" alt="Logo Maya">
             </a>
             <a href="https://www.adobe.com/ca_fr/products/photoshop.html?msockid=1ad2b12c454562d4321da779443963bd"
                 target="_blank">
-                <img src="./media/images/logiciels/photoshop.png">
+                <img src="./media/images/logiciels/photoshop.png" alt="Logo Photoshop">
             </a>
             <a href="https://www.reaper.fm/" target="_blank">
-                <img src="./media/images/logiciels/reaper.png">
+                <img src="./media/images/logiciels/reaper.png" alt="Logo Reaper">
             </a>
             <a href="https://unity.com/" target="_blank">
-                <img src="./media/images/logiciels/unity.png">
+                <img src="./media/images/logiciels/unity.png" alt="Logo Unity">
             </a>
             <a href="https://code.visualstudio.com/" target="_blank">
-                <img src="./media/images/logiciels/vscode.png">
+                <img src="./media/images/logiciels/vscode.png" alt="Logo VS Code">
             </a>
         </div>
         <h2>Langages de programmation</h2>
         <div>
-            <a>
-                <img src="./media/images/langues/html.png">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                <img src="./media/images/langues/html.png" alt="Logo HTML">
             </a>
-            <a>
-                <img src="./media/images/langues/css.png">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                <img src="./media/images/langues/css.png" alt="Logo CSS">
             </a>
-            <a>
-                <img src="./media/images/langues/javascript.png">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                <img src="./media/images/langues/javascript.png" alt="Logo JavaScript">
             </a>
-            <a>
-                <img src="./media/images/langues/csharp.png">
+            <a href="https://www.w3schools.com/cs/index.php" target="_blank">
+                <img src="./media/images/langues/csharp.png" alt="Logo C#">
             </a>
-            <a>
-                <img src="./media/images/langues/cplusplus.png" class="cplusplus">
+            <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">
+                <img src="./media/images/langues/cplusplus.png" alt="Logo C++" class="cplusplus">
             </a>
         </div>
     </section>
 
     <footer>
         <h2>Contact</h2>
-        <p><a href="mailto:terrylty18@gmail.com">terrylty18@gmail.com</a></p>
-        <p>Laval, Qc</p>
-        <a href=""><img src="./media/images/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin"></a>
+        <div class="contactcontainer">
+            <div>
+                <p><a href="mailto:terrylty18@gmail.com">terrylty18@gmail.com</a></p>
+                <p>Laval, Qc</p>
+            </div>
+            <div class="logocontainer">
+                <a href="https://www.youtube.com/@2lung2" target="_blank"><img
+                        src="./media/images/logos/logo_youtube_blanc.png" alt="Logo Youtube" class="logoyoutube"></a>
+                <a href="" target="_blank"><img src="./media/images/logos/linkedin_logo.png" alt="Logo LinkedIn"
+                        class="logolinkedin"></a>
+            </div>
+        </div>
         <p class="trademark">Lu Ting Yung - 2025</p>
     </footer>
 </body>

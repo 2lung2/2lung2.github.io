@@ -19,13 +19,13 @@ const app = Vue.createApp({
             speculumImage: "./media/images/projets/speculum_screen1.png",
             speculumDescription: "Court-métrage animé d'un univers étrange. Le monde réalisé est abstrait et étrange. J'ai modélisé et monté le tout pour créer une ambiance énigmatique.",
             speculumSoftware: "Maya, Davinci Resolve, Reaper",
-            speculumLink: "https://www.youtube.com/watch?v=YutRnIUIo-I",
+            speculumLink: "https://www.youtube.com/watch?v=BpQ4KrSqSSo",
 
             lapiluleRole: "Montage vidéo, direction artistique, création de quelques animations 2D, scénariste assistant, caméraman. Réalisé en collaboration avec Nicolas Cruz, Thearylou Lach, Xavier Martineau",
             lapiluleImage: "./media/images/projets/lapilule_screen1.jpg",
             lapiluleDescription: "Court-métrage sur le délire. Avec la pilule on voulait montrer le délire d'un écrivain dans une histoire courte avec des visuels percutant.",
             lapiluleSoftware: "Davinci Resolve, After effects, Dragonframe 4",
-            lapiluleLink: "https://www.youtube.com/watch?v=eTVMWB6OQQQ",
+            lapiluleLink: "https://www.youtube.com/watch?v=x_g__19hLGA",
 
             gluttonyRole: "Programmation du jeu, level design",
             gluttonyImage: "./media/images/projets/gluttony_screen1.png",
@@ -72,8 +72,7 @@ gsap.to(
             trigger: ".logoprincipal",
             start: "30% 30%",
             end: "30% 10%",
-            scrub: 1,
-            markers: true
+            scrub: 1
         }
     }
 );
@@ -112,19 +111,26 @@ let r = document.querySelector(':root');
 const logoPrincipal = document.querySelector('.logoprincipal img');
 const logoNight = document.querySelector('.logoprincipal img');
 const logoLinkedIn = document.querySelector('.logolinkedin');
+const logoYoutube = document.querySelector('.logoyoutube');
 const nightButton = document.querySelector('.nightmode img');
-
 let isNightMode = false;
 localStorage.setItem("saveIsNightMode", isNightMode);
 /* let saveIsNightMode = localStorage.getItem("saveIsNightMode"); */
+const contactButton = document.getElementById("contactbutton");
+const zoneContact = document.querySelector('footer');
 
 nightMode()
 
-// Clique du bouton
+// Clique du bouton nightmode
 nightButton.addEventListener('click', function () {
     isNightMode = !isNightMode;
     nightMode()
 })
+
+// Clique bouton contact
+contactButton.addEventListener("click", () => {
+  zoneContact.scrollIntoView({ behavior: "smooth", block: "end" });
+});
 
 // change Noir a blanc vice-versa et les images à leur version light/dark
 function nightMode() {
@@ -132,14 +138,18 @@ function nightMode() {
         r.style.setProperty('--blanc', '#272635');
         r.style.setProperty('--noir', '#e8e9f3');
         logoPrincipal.src = "./media/images/logo_lty_blanc.png";
-        logoLinkedIn.src = "./media/images/linkedin_logo_noir.png";
-        nightButton.src = "./media/images/nightmode.png"
+        logoLinkedIn.src = "./media/images/logos/linkedin_logo_noir.png";
+        logoYoutube.src = "./media/images/logos/logo_youtube_noir.png";
+        nightButton.src = "./media/images/nightmode.png";
+        console.log(isNightMode)
     } else {
         r.style.setProperty('--blanc', '#e8e9f3');
         r.style.setProperty('--noir', '#272635');
         logoPrincipal.src = "./media/images/logo_lty.png";
-        logoLinkedIn.src = "./media/images/linkedin_logo.png";
-        nightButton.src = "./media/images/nightmode_blanc.png"
+        logoLinkedIn.src = "./media/images/logos/linkedin_logo.png";
+        logoYoutube.src = "./media/images/logos/logo_youtube_blanc.png";
+        nightButton.src = "./media/images/nightmode_blanc.png";
+        console.log(isNightMode)
     }
 }
 
