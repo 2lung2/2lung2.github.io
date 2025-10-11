@@ -65,16 +65,16 @@
 
     <main class="mainprojets">
         <div
-            @click="changeModal('Speculum', 'speculumImage', 'speculumDescription', 'speculumRole', 'speculumSoftware', 'speculumLink'), modalIsShown = true">
+            @click="changeModal(), index = 0, modalIsShown = true">
         </div>
         <div
-            @click="changeModal('La pilule', 'lapiluleImage', 'lapiluleDescription', 'lapiluleRole', 'lapiluleSoftware', 'lapiluleLink'), modalIsShown = true">
+            @click="changeModal(), index = 1, modalIsShown = true">
         </div>
         <div
-            @click="changeModal('La plume vorace', 'plumeImage', 'plumeDescription', 'plumeRole', 'plumeSoftware', 'plumeLink'), modalIsShown = true">
+            @click="changeModal(), index = 2, modalIsShown = true">
         </div>
         <div
-            @click="changeModal('Gluttony', 'gluttonyImage', 'gluttonyDescription', 'gluttonyRole', 'gluttonySoftware', 'gluttonyLink'), modalIsShown = true">
+            @click="changeModal(), index = 3, modalIsShown = true">
         </div>
     </main>
 
