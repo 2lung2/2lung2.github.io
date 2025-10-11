@@ -74,7 +74,6 @@ nav {
 
     div {
         width: 40px;
-        height: 40px;
         transform: translateX(-200%);
         background-size: contain;
         background-repeat: no-repeat;
@@ -90,6 +89,10 @@ nav {
         :hover {
             width: 30px;
             transition: 0.2s;
+        }
+
+        :active {
+            width: 20px;
         }
 
         img {
@@ -261,6 +264,11 @@ section {
         transition: 0.3s;
     }
 
+    img:active {
+        transition: 0.2s;
+        width: 90%;
+    }
+
     img:hover {
         filter: grayscale(0%);
     }
@@ -428,12 +436,12 @@ footer {
 
 
 @media screen and (max-width: 800px) {
-    .logoprincipal {
-        height: 70vh;
-
-        img {
-            width: 400px;
-            height: 400px;
+    header {
+        .logoprincipal {
+            img {
+                max-width: 400px;
+                max-height: 400px;
+            }
         }
     }
 
@@ -442,46 +450,31 @@ footer {
     }
 
     li {
-        list-style-type: none;
-        text-align: right;
         font-size: 15vw;
-
-        :not(:hover) {
-            transition: 0.3s;
-        }
-
         :hover {
             font-size: 17vw;
-            transition: 0.3s;
         }
     }
 }
 
-@media screen and ((min-width: 800px) and (max-width: 1200px)) {
-    .logoprincipal {
-
-        img {
-            width: 700px;
-            height: 700px;
+@media screen and ((min-width: 800px) and (max-width: 1400px)) {
+    header {
+        .logoprincipal {
+            img {
+                max-width: 700px;
+                max-height: 700px;
+            }
         }
     }
-
-    h1 {
-        font-size: 15vw;
-    }
-
-    li {
-        list-style-type: none;
-        text-align: right;
-        font-size: 15vw;
-
-        :not(:hover) {
-            transition: 0.3s;
+        h1 {
+            font-size: 13vw;
         }
 
-        :hover {
-            font-size: 17vw;
-            transition: 0.3s;
+        li {
+            font-size: 13vw;
+
+            :hover {
+                font-size: 15vw;
+            }
         }
-    }
 }

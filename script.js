@@ -56,11 +56,11 @@ gsap.to(".logoprincipal img", {
 
 gsap.to(".monnom", {
     translateX: "1%",
-    ease: "none",
+    ease: "expo.out",
     scrollTrigger: {
         trigger: ".logoprincipal",
-        start: "20% 30%",
-        end: "70% top",
+        start: "90% 50%",
+        end: "90% 20%",
         scrub: 1
     }
 });
@@ -136,8 +136,7 @@ gsap.to(
             trigger: "#titreprojets",
             start: "50% 30%",
             end: "50% 10%",
-            scrub: 1,
-            markers: true
+            scrub: 1
         }
     }
 );
@@ -149,8 +148,8 @@ gsap.to(
         ease: "power1.inOut",
         scrollTrigger: {
             trigger: ".mainprojets",
-            start: "top 80%",
-            end: "top 50%",
+            start: "20% 80%",
+            end: "20% 50%",
             scrub: 1
         }
     }
