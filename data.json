@@ -19,20 +19,20 @@
     },
     {
         "index": 2,
-        "title": "Gluttony",
-        "role": "Programmation du jeu, level design",
-        "image": "./media/images/projets/gluttony_screen1.png",
-        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge. ",
-        "software": "Visual Studio (Javascript, Phaser3), Itch.io",
-        "link": "https://lung2.itch.io/gluttony"
-    },
-    {
-        "index": 3,
         "title": "La plume vorace",
         "role": "Modélisation, rigging, faire des rendus",
         "image": "./media/images/projets/plume_screen2.jpg",
         "description": "Rendus d'un personnage que j'ai créé. J'ai modélisé un personnage moitié homme et moitié corbeau pour rentrer dans un monde noir et blanc. Ce personnage est un produit de son environnement sombre.",
         "software": "Maya",
         "link": "./media/images/projets/plume_screen1.jpg"
+    },
+    {
+        "index": 3,
+        "title": "Gluttony",
+        "role": "Programmation du jeu, level design",
+        "image": "./media/images/projets/gluttony_screen1.png",
+        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge. ",
+        "software": "Visual Studio (Javascript, Phaser3), Itch.io",
+        "link": "https://lung2.itch.io/gluttony"
     }
 ]

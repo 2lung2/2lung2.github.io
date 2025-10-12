@@ -160,51 +160,54 @@ gsap.to(
 // Javascript
 let r = document.querySelector(':root');
 const logoPrincipal = document.querySelector('.logoprincipal img');
-const logoNight = document.querySelector('.logoprincipal img');
+const logoDark = document.querySelector('.logoprincipal img');
 const logoLinkedIn = document.querySelector('.logolinkedin');
 const logoYoutube = document.querySelector('.logoyoutube');
-const nightButton = document.querySelector('.nightmode img');
-let isNightMode = false;
-localStorage.setItem("saveIsNightMode", isNightMode);
-/* let saveIsNightMode = localStorage.getItem("saveIsNightMode"); */
+const darkButton = document.querySelector('.darkmode img');
 const contactButton = document.getElementById("contactbutton");
 const zoneContact = document.querySelector('footer');
 
-nightMode()
+let isDarkMode = false;
+darkMode()
 
-// Clique du bouton nightmode
-nightButton.addEventListener('click', function () {
-    // Alterne variable nightmode
-    isNightMode = !isNightMode;
-    // appel fonction nightmode
-    nightMode()
+// Clique du bouton darkmode
+darkButton.addEventListener('click', function () {
+    // Alterne variable darkmode
+    isDarkMode = !isDarkMode;
+    // Sauvegarde la valeur de isdarkMode
+    localStorage.setItem("saveIsDarkMode", isDarkMode);
+    // appel fonction darkmode
+    darkMode()
+        
 })
 
-// Clique bouton contact
-contactButton.addEventListener("click", () => {
-    zoneContact.scrollIntoView({ behavior: "smooth", block: "end" });
-});
-
 // change Noir a blanc vice-versa et les images à leur version light/dark
-function nightMode() {
-    if (isNightMode == true) {
+function darkMode() {
+    // charge la sauvegarde isDarkMode
+    let saveIsDarkMode = localStorage.getItem("saveIsDarkMode");
+    
+    if (saveIsDarkMode == "true") {
+        // Dark mode
         r.style.setProperty('--blanc', '#272635');
         r.style.setProperty('--noir', '#e8e9f3');
         logoPrincipal.src = "./media/images/logo_lty_blanc.png";
         logoLinkedIn.src = "./media/images/logos/linkedin_logo_noir.png";
         logoYoutube.src = "./media/images/logos/logo_youtube_noir.png";
-        nightButton.src = "./media/images/nightmode.png";
-        console.log(isNightMode)
+        darkButton.src = "./media/images/darkmode.png";
     } else {
+        // Light mode
         r.style.setProperty('--blanc', '#e8e9f3');
         r.style.setProperty('--noir', '#272635');
         logoPrincipal.src = "./media/images/logo_lty.png";
         logoLinkedIn.src = "./media/images/logos/linkedin_logo.png";
         logoYoutube.src = "./media/images/logos/logo_youtube_blanc.png";
-        nightButton.src = "./media/images/nightmode_blanc.png";
-        console.log(isNightMode)
+        darkButton.src = "./media/images/darkmode_blanc.png";
     }
 }
 
+// Clique bouton contact
+contactButton.addEventListener("click", () => {
+    zoneContact.scrollIntoView({ behavior: "smooth", block: "end" });
+});
 
 

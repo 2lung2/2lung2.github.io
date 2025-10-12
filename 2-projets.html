@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!-- pour que le nightmode fonctionne -->
+    <!-- pour que le darkmode fonctionne -->
     <div class="logoprincipal">
         <img src="./media/images/logo_lty.png" alt="Logo principal">
     </div>
@@ -30,8 +30,8 @@
 
     <nav>
         <a href="./index.html">Ting Yung Terry Lu</a>
-        <div alt="nightmode logo" class="nightmode">
-            <img src="./media/images/nightmode_blanc.png" alt="Logo Nightmode">
+        <div alt="darkmode logo" class="darkmode">
+            <img src="./media/images/darkmode_blanc.png" alt="Logo Darkmode">
         </div>
     </nav>
 
@@ -41,13 +41,13 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <a :href="this.link" target="_blank">
+                        <a :href="link" target="_blank">
                             <h2 class="modal-title" id="exampleModalLabel">{{ title }}</h2>
                         </a>
                         <div id="closebutton" @click="modalIsShown = false"> X </div>
                     </div>
                     <div class="modal-body">
-                        <a :href="this.image" target="_blank"><img :src="image"></a>
+                        <a :href="image" target="_blank"><img :src="image"></a>
                         <p>{{ description }}</p>
                         <h3>Roles</h3>
                         <p>{{ role }}</p>
