@@ -7,7 +7,6 @@ const app = Vue.createApp({
     data() {
         return {
             modalIsShown: false,
-
             index: 0,
             title: "title",
             image: "image",
@@ -18,22 +17,22 @@ const app = Vue.createApp({
         };
     },
     methods: {
+        // Clique sur projet
         changeModal() {
+            // prends données de data.json
             fetch("./data.json")
                 // transforme les données json
                 .then((response) => response.json())
-                // mets les données dans la valeur datasArr du return
+                // mets change les infos du modals selon le projet choisi avec l'index
                 .then((donnees) => {
-                    this.datasArr = donnees;
                     this.title = donnees[this.index].title;
                     this.image = donnees[this.index].image;
                     this.description = donnees[this.index].description;
                     this.role = donnees[this.index].role;
                     this.software = donnees[this.index].software;
                     this.link = donnees[this.index].link;
-                    console.log(donnees[this.index].role)
                 })
-                // message en cas d'erreur
+                // message affiché en cas d'erreur
                 .catch((error) => {
                     console.log("erreur detecté", error);
                 })
@@ -48,12 +47,15 @@ app.mount("body")
 // GSAP
 
 // Accueil
+
+// logo apparait
 gsap.to(".logoprincipal img", {
     opacity: 1,
     ease: "power1.inOut",
     duration: 1,
 })
 
+// Nom slide in
 gsap.to(".monnom", {
     translateX: "1%",
     ease: "expo.out",
@@ -65,6 +67,7 @@ gsap.to(".monnom", {
     }
 });
 
+// liens apparaissent en scroll
 gsap.fromTo(
     ".liste",
     { alpha: 0, y: 30 },
@@ -81,7 +84,10 @@ gsap.fromTo(
     }
 );
 
-// A Propos
+
+// À Propos
+
+// Titre À propos disparait
 gsap.to(
     "#titrepropos",
     {
@@ -96,6 +102,7 @@ gsap.to(
     }
 );
 
+// Bio grandit
 gsap.to(
     ".mainapropos",
     {
@@ -110,6 +117,7 @@ gsap.to(
     }
 );
 
+// Compétences apparaissent
 gsap.fromTo(
     "section",
     { alpha: 0, y: 30 },
@@ -126,7 +134,10 @@ gsap.fromTo(
     }
 );
 
+
 // Projets
+
+// Titre projet disparait
 gsap.to(
     "#titreprojets",
     {
@@ -141,6 +152,7 @@ gsap.to(
     }
 );
 
+// projets agrandissent
 gsap.to(
     ".mainprojets",
     {
@@ -157,7 +169,7 @@ gsap.to(
 
 
 
-// Javascript
+// Javascript base
 let r = document.querySelector(':root');
 const logoPrincipal = document.querySelector('.logoprincipal img');
 const logoDark = document.querySelector('.logoprincipal img');
@@ -166,8 +178,9 @@ const logoYoutube = document.querySelector('.logoyoutube');
 const darkButton = document.querySelector('.darkmode img');
 const contactButton = document.getElementById("contactbutton");
 const zoneContact = document.querySelector('footer');
+let isDarkMode;
 
-let isDarkMode = false;
+// Check si c'est dark mode au lancement de la page;
 darkMode()
 
 // Clique du bouton darkmode
@@ -178,14 +191,13 @@ darkButton.addEventListener('click', function () {
     localStorage.setItem("saveIsDarkMode", isDarkMode);
     // appel fonction darkmode
     darkMode()
-        
 })
 
 // change Noir a blanc vice-versa et les images à leur version light/dark
 function darkMode() {
     // charge la sauvegarde isDarkMode
     let saveIsDarkMode = localStorage.getItem("saveIsDarkMode");
-    
+
     if (saveIsDarkMode == "true") {
         // Dark mode
         r.style.setProperty('--blanc', '#272635');
@@ -205,7 +217,7 @@ function darkMode() {
     }
 }
 
-// Clique bouton contact
+// scroll au footer au clique du bouton contact
 contactButton.addEventListener("click", () => {
     zoneContact.scrollIntoView({ behavior: "smooth", block: "end" });
 });

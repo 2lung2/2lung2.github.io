@@ -26,6 +26,7 @@
         <img src="./media/images/logo_lty.png" alt="Logo principal">
     </div>
 
+    <!-- Fond sombre quand le modal apparait -->
     <div id="screen" v-show="modalIsShown == true"></div>
 
     <nav>
@@ -35,7 +36,7 @@
         </div>
     </nav>
 
-    <!-- Modal -->
+    <!-- Modal (caché de base) -->
     <div class="modalcontainer" v-show="modalIsShown == true">
         <div class="modal">
             <div class="modal-dialog">
@@ -59,10 +60,12 @@
         </div>
     </div>
 
+    <!-- Titre -->
     <header>
         <h1 id="titreprojets">Mes <br> projets</h1>
     </header>
 
+    <!-- Les projets -->
     <main class="mainprojets">
         <div
             @click="changeModal(), index = 0, modalIsShown = true">
