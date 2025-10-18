@@ -67,6 +67,20 @@ gsap.to(".monnom", {
     }
 });
 
+gsap.to(
+    ".logoprincipal",
+    {
+        alpha: 0,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".logoprincipal",
+            start: "30% 30%",
+            end: "30% 10%",
+            scrub: 1
+        }
+    }
+);
+
 // liens apparaissent en scroll
 gsap.fromTo(
     ".liste",
