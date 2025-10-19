@@ -159,8 +159,8 @@ gsap.to(
         ease: "power1.inOut",
         scrollTrigger: {
             trigger: "#titreprojets",
-            start: "50% 30%",
-            end: "50% 10%",
+            start: "60% 30%",
+            end: "60% 10%",
             scrub: 1
         }
     }

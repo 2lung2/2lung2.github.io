@@ -6,7 +6,6 @@
 html,
 body {
     overflow-x: hidden;
-
 }
 
 body {
@@ -16,7 +15,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    margin: 0;
+    margin: 0px;
 }
 
 a {
@@ -458,6 +457,74 @@ footer {
             font-size: 17vw;
         }
     }
+
+    .mainprojets {
+        margin-top: 0;
+        margin-bottom: 20vh;
+        width: 100vw;
+        height: 35vh;
+        gap: 10px;
+
+        div {
+            width: 14vw;
+            height: 60%;
+        }
+    }
+
+    .modal {
+        width: 80%;
+        height: 80%;
+        font-size: 1rem;
+
+        h2 {
+            font-size: 9vw;
+            margin: 0;
+        }
+
+        h2:hover {
+            text-decoration: underline;
+        }
+
+        h2::after {
+            font-size: 25%;
+        }
+
+        img {
+            width: 100%;
+            align-self: center;
+            margin-top: 1%;
+        }
+    }
+
+    .modal-body {
+        height: 70vh;
+    }
+
+    footer {
+        padding: 3%;
+        padding-bottom: 1%;
+        font-size: 3vw;
+
+        h2 {
+            font-size: 7vw;
+            margin-bottom: 0;
+        }
+
+        .trademark {
+            font-size: 2vw;
+        }
+    }
+
+    .logocontainer {
+        a {
+            width: 10vw;
+        }
+
+        img {
+            width: 100%;
+            filter: brightness(100%);
+        }
+    }
 }
 
 @media screen and ((min-width: 800px) and (max-width: 1400px)),
@@ -481,5 +548,82 @@ footer {
         :hover {
             font-size: 15vw;
         }
+    }
+
+    .mainprojets {
+        margin-top: 0;
+        margin-bottom: 20vh;
+        width: 100vw;
+        height: 40vh;
+        gap: 10px;
+
+        div {
+            width: 14vw;
+            height: 60%;
+        }
+    }
+
+    .modal {
+        width: 80%;
+        height: 80%;
+        font-size: 1rem;
+
+        h2 {
+            font-size: 9vw;
+            margin: 0;
+        }
+
+        h2:hover {
+            text-decoration: underline;
+        }
+
+        h2::after {
+            font-size: 25%;
+        }
+
+        img {
+            width: 100%;
+            align-self: center;
+            margin-top: 1%;
+        }
+    }
+
+    .modal-body {
+        height: 70vh;
+    }
+
+    footer {
+        padding: 3%;
+        padding-bottom: 1%;
+        font-size: 3vw;
+
+        h2 {
+            font-size: 7vw;
+            margin-bottom: 0;
+        }
+
+        .trademark {
+            font-size: 2vw;
+        }
+    }
+
+    .logocontainer {
+        a {
+            width: 10vw;
+        }
+
+        img {
+            width: 100%;
+            filter: brightness(100%);
+        }
+    }
+
+    .modalcontainer {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
