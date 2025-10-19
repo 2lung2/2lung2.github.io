@@ -338,7 +338,7 @@ section {
 }
 
 .modal-dialog {
-    overflow-y: initial !important
+    overflow-y: initial
 }
 
 .modal-body {
@@ -386,14 +386,8 @@ footer {
         color: var(--blanc);
     }
 
-    a:not(:hover) {
-        transition: 0.3s;
-    }
-
     a:hover {
-        font-size: larger;
         text-decoration: underline;
-        transition: 0.3s;
     }
 
     .trademark {
@@ -411,18 +405,19 @@ footer {
 
 .logocontainer {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: start;
-    gap: 20%;
-    margin-right: 1.5vw;
+    width: 50%;
+    gap: 10px;
 
     a {
-        width: 20%;
-
+        width: 5vw;
+        aspect-ratio: 1/1;
     }
 
     img {
-        width: 150%;
+        width: 100%;
+        filter: brightness(50%);
     }
 
     img:not(:hover) {
@@ -430,13 +425,14 @@ footer {
     }
 
     img:hover {
-        width: 160%;
         transition: 0.2s;
+        filter: brightness(100%);
     }
 }
 
 
-@media screen and (max-width: 800px),  (max-height: 800px) {
+@media screen and (max-width: 800px),
+(max-height: 800px) {
     header {
         .logoprincipal {
             img {
@@ -459,7 +455,8 @@ footer {
     }
 }
 
-@media screen and ((min-width: 800px) and (max-width: 1400px)),  ((min-height: 800px) and (max-height: 1200px)){
+@media screen and ((min-width: 800px) and (max-width: 1400px)),
+((min-height: 800px) and (max-height: 1200px)) {
     header {
         .logoprincipal {
             img {
