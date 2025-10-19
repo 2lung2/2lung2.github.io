@@ -3,6 +3,12 @@
     --noir: #272635;
 }
 
+html,
+body {
+    overflow-x: hidden;
+
+}
+
 body {
     background-color: var(--blanc);
     color: var(--noir);
@@ -11,7 +17,6 @@ body {
     font-weight: 500;
     font-style: normal;
     margin: 0;
-    overflow-x: hidden;
 }
 
 a {
@@ -74,7 +79,7 @@ nav {
 
     div {
         width: 40px;
-        transform: translateX(-200%);
+        transform: translateX(-150%);
         background-size: contain;
         background-repeat: no-repeat;
         display: flex;
