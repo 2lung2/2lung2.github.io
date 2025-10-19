@@ -58,8 +58,6 @@ li {
 nav {
     width: 100vw;
     height: 3vh;
-    position: sticky;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +65,8 @@ nav {
     padding: 10px 30px;
     background-color: var(--noir);
     z-index: 1;
+    position: fixed;
+    top: 0px;
 
     a {
         color: var(--blanc);
