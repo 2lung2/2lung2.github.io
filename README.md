@@ -9,4 +9,4 @@ Page d'accueil qui mène à d'autres pages via texte
 Cartes dans un carrousel qui mène à une autre page.
 
 ## Composante Vue.js
-Dark mode / Light mode toggle
+modal -> changement de données
