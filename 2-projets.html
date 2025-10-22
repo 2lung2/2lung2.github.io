@@ -54,8 +54,35 @@
                         <p>{{ role }}</p>
                         <h3>Logiciels</h3>
                         <p>{{ software }}</p>
+
+                        <!-- Détails Speculum -->
                         <div v-show="index == 0">
                             <a href="./3-speculum.html">En savoir plus</a>
+                            <h3>Documentation de Speculum</h3>
+                            <p>1. Synopsis et concept: J'ai commencé par établir l'ambiance et la thématique que je
+                                voulais, suivi par une idée du déroulement du court métrage que j'envisageais.</p>
+                            <img src="./media/images/projets/speculum_detail/synopsis.jpg" alt="">
+                            <p>2. Planche d'inspiration: J'ai cherché des images qui pouvaient capturer l'ambiance
+                                désirée,
+                                ainsi que des références pour m'aider à modéliser mes modèles.</p>
+                            <img src="./media/images/projets/speculum_detail/moodboard1.jpg" alt="">
+                            <img src="./media/images/projets/speculum_detail/moodboard2.jpg" alt="">
+                            <img src="./media/images/projets/speculum_detail/moodboard3.jpg" alt="">
+                            <p>3. Scénarimage: J'ai dessiné pour le scénario de mon animation.</p>
+                            <img src="./media/images/projets/speculum_detail/scenarimage.jpg" alt="">
+                            <p>4. Modélisation: J'ai modélisé et rendu les objets nécessaires à mon animation sur Maya.
+                            </p>
+                            <img src="./media/images/projets/speculum_detail/modeles_speculum.png" alt="">
+                            <p>5. Animation: En utilisant diverses scènes, j'ai animé plusieurs séquences d'animation
+                                sur
+                                Maya.</p>
+                            <img src="./media/images/projets/speculum_detail/capture_maya.png" alt="">
+                            <p>6. Montage: Pour finir, j'ai utilisé DaVinci Resolve pour mettre les séquences dans un
+                                ordre
+                                cohérent, ainsi que de changer la colorisation et mettre la bande sonore que j'ai créée
+                                dans
+                                mon cours d'audio.</p>
+                            <img src="./media/images/projets/speculum_detail/capture_maya.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -70,17 +97,13 @@
 
     <!-- Les projets -->
     <main class="mainprojets">
-        <div
-            @click="changeModal(), index = 0, modalIsShown = true">
+        <div @click="changeModal(), index = 0, modalIsShown = true">
         </div>
-        <div
-            @click="changeModal(), index = 1, modalIsShown = true">
+        <div @click="changeModal(), index = 1, modalIsShown = true">
         </div>
-        <div
-            @click="changeModal(), index = 2, modalIsShown = true">
+        <div @click="changeModal(), index = 2, modalIsShown = true">
         </div>
-        <div
-            @click="changeModal(), index = 3, modalIsShown = true">
+        <div @click="changeModal(), index = 3, modalIsShown = true">
         </div>
     </main>
 
@@ -92,8 +115,10 @@
                 <p>Laval, Qc</p>
             </div>
             <div class="logocontainer">
-                <a href="https://www.youtube.com/@2lung2" target="_blank"><img src="./media/images/logos/logo_youtube_blanc.png" alt="Logo Youtube" class="logoyoutube"></a>
-                <a href="" target="_blank"><img src="./media/images/logos/linkedin_logo.png" alt="Logo LinkedIn" class="logolinkedin"></a>
+                <a href="https://www.youtube.com/@2lung2" target="_blank"><img
+                        src="./media/images/logos/logo_youtube_blanc.png" alt="Logo Youtube" class="logoyoutube"></a>
+                <a href="" target="_blank"><img src="./media/images/logos/linkedin_logo.png" alt="Logo LinkedIn"
+                        class="logolinkedin"></a>
             </div>
         </div>
         <p class="trademark">Lu Ting Yung - 2025</p>

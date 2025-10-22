@@ -437,8 +437,7 @@ footer {
 }
 
 
-@media screen and (max-width: 800px),
-(max-height: 800px) {
+@media screen and (max-width: 800px) {
     header {
         .logoprincipal {
             img {
@@ -704,7 +703,6 @@ footer {
         }
     }
 }
-
 
 @media screen and ((min-height: 800px) and (max-height: 1200px)) {
     header {
