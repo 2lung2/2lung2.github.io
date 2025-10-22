@@ -619,7 +619,7 @@ footer {
     }
 }
 
-@media screen and (min-aspect-ratio: 21/9 ) {
+@media screen and (min-aspect-ratio: 21/9) {
     h1 {
         font-size: 20vh;
     }
@@ -639,18 +639,18 @@ footer {
             aspect-ratio: 16/9;
             overflow: hidden;
             pointer-events: none;
-    
+
             iframe {
                 width: 300%;
                 height: 100%;
                 margin-left: -100%;
             }
         }
-    
+
         ul {
             margin: 30vh 0;
         }
-    
+
     }
 
     section {
@@ -680,15 +680,26 @@ footer {
         align-items: start;
         width: 50%;
         gap: 10px;
-    
+
         a {
             width: 5vw;
             aspect-ratio: 1/1;
         }
-    
+
         img {
             width: 100%;
             filter: brightness(50%);
+        }
+    }
+}
+
+@media screen and (max-height: 800px) {
+    header {
+        .logoprincipal {
+            img {
+                max-width: 400px;
+                max-height: 400px;
+            }
         }
     }
 }
