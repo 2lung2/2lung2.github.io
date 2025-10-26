@@ -166,7 +166,7 @@ main {
     margin: 20vh 0;
 
     img {
-        width: 35%;
+        width: 25%;
         margin-right: 1%;
     }
 
@@ -472,6 +472,18 @@ footer {
         }
     }
 
+    .mainapropos {
+        flex-direction: column;
+
+        img {
+            width: 35%;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
     .modal {
         width: 80%;
         height: 80%;
@@ -589,7 +601,7 @@ footer {
     }
 
     .modal-body {
-        height: 70vh;
+        height: 60vh;
     }
 
     footer {
