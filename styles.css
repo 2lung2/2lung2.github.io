@@ -299,7 +299,7 @@ section {
 
 .modal {
     position: fixed;
-    top: 10%;
+    top: 7%;
     background-color: var(--blanc);
     width: 40%;
     height: 70%;
@@ -626,7 +626,6 @@ footer {
 
         img {
             width: 100%;
-            filter: brightness(100%);
         }
     }
 }
@@ -700,7 +699,6 @@ footer {
 
         img {
             width: 100%;
-            filter: brightness(50%);
         }
     }
 }

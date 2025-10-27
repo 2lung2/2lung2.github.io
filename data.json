@@ -11,9 +11,9 @@
     {
         "index": 1,
         "title": "La pilule",
-        "role": "Montage vidéo, direction artistique, création de quelques animations 2D, scénariste assistant, caméraman. Réalisé en collaboration avec Nicolas Cruz, Thearylou Lach, Xavier Martineau",
+        "role": "Montage vidéo, direction artistique, création de quelques animations 2D, scénariste assistant, caméraman. Réalisé en collaboration avec Nicolas Cruz, Thearylou Lach et Xavier Martineau",
         "image": "./media/images/projets/lapilule_screen1.jpg",
-        "description": "Court-métrage sur le délire. Avec la pilule on voulait montrer le délire d'un écrivain dans une histoire courte avec des visuels percutant.",
+        "description": "Court-métrage sur le délire. Avec la pilule on voulait montrer le délire d'un écrivain dans une histoire courte avec des visuels percutants.",
         "software": "Davinci Resolve, After effects, Dragonframe 4",
         "link": "https://www.youtube.com/watch?v=x_g__19hLGA"
     },
@@ -31,7 +31,7 @@
         "title": "Gluttony",
         "role": "Programmation du jeu, level design",
         "image": "./media/images/projets/gluttony_screen1.png",
-        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge. ",
+        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout-puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge.",
         "software": "Visual Studio (Javascript, Phaser3), Itch.io",
         "link": "https://lung2.itch.io/gluttony"
     }
