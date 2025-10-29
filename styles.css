@@ -441,8 +441,8 @@ footer {
     header {
         .logoprincipal {
             img {
-                max-width: 400px;
-                max-height: 400px;
+                width: 400px;
+                height: 400px;
             }
         }
     }
@@ -544,8 +544,8 @@ footer {
     header {
         .logoprincipal {
             img {
-                max-width: 700px;
-                max-height: 700px;
+                width: 700px;
+                height: 700px;
             }
         }
     }
