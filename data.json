@@ -4,7 +4,7 @@
         "title": "Speculum",
         "role": "Modélisation, animation, design sonore, montage",
         "image": "./media/images/projets/speculum_screen1.png",
-        "description": "Court-métrage animé d'un univers étrange. Le monde réalisé est abstrait et étrange. J'ai modélisé et monté le tout pour créer une ambiance énigmatique.",
+        "description": "Court-métrage animé d'un univers abstrait étrange. J'ai modélisé et monté le tout pour créer une ambiance énigmatique.",
         "software": "Maya, Davinci Resolve, Reaper",
         "link": "https://www.youtube.com/watch?v=BpQ4KrSqSSo"
     },
@@ -31,7 +31,7 @@
         "title": "Gluttony",
         "role": "Programmation du jeu, level design",
         "image": "./media/images/projets/gluttony_screen1.png",
-        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout-puissant. Pour faire cela il doit se retrouver et parcourir le château où Jean, maintenant son ennemi se refuge.",
+        "description": "Jeu de plateforme 2D développé avec Phaser3. Le joueur contrôle Pierre, un aventurier, pour vivre sa quête de vengeance contre son ami Jean qui l'a trahi pour être tout-puissant. Pour faire cela, il doit se retrouver et parcourir le château où Jean, maintenant son ennemi, se refuge.",
         "software": "Visual Studio (Javascript, Phaser3), Itch.io",
         "link": "https://lung2.itch.io/gluttony"
     }
